@@ -35,20 +35,6 @@ function initDemoMap(){
 
     
     layerControl.addTo(map);
-
-    L.leafletGeotiff(
-        url='wind_data.tif',
-        options={band: 0,
-            displayMin: 0,
-            displayMax: 360,
-            name: 'Wind direction',
-            //colorScale: 'rainbow',
-            //clampLow: false,
-            //clampHigh: true,
-            vector:true,
-            arrowSize: 20,
-        }
-    ).addTo(map)
    
     return {
         map: map,
